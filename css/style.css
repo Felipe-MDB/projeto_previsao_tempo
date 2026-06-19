@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #2193b0,
+        #6dd5ed
+    );
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.2);
+
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 12px;
+
+    margin-bottom: 15px;
+
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 12px;
+
+    margin-bottom: 10px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+#searchBtn {
+    background: white;
+}
+
+#locationBtn {
+    background: #ffd54f;
+}
+
+#themeBtn {
+    background: #212121;
+    color: white;
+}
+
+#weatherResult {
+    margin-top: 25px;
+}
+
+.weather-main {
+    text-align: center;
+}
+
+.weather-icon {
+    font-size: 4rem;
+}
+
+.temperature {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.city-name {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.weather-info {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    background: rgba(255,255,255,.15);
+}
+
+#forecast {
+    margin-top: 25px;
+}
+
+.forecast-day {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 8px;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    background: rgba(255,255,255,.15);
+}
+
+.dark {
+    background:
+        linear-gradient(
+            135deg,
+            #141e30,
+            #243b55
+        );
+}
+
+.dark .container {
+    background: rgba(0,0,0,0.25);
+}
